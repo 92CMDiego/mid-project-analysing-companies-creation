@@ -1,11 +1,14 @@
 # Midbootcamp project | Analysing companies creation per country.
-##### 1. Motivation.
+
+
+#### 1. Motivation.
 
 The main idea of this exercise is to analyse a dataset that contains the number of new LLC's created per country per year. The analysis covers the period from 2006 to 2020 and includes data for 163 countries. We would like to:
 - See if we can relate this figures to some other variables.
 - Obtain insights about the data and the possible relationships.
 
-##### 2. Sources.
+
+#### 2. Sources.
 
 - Dataset of new LLCs created per country per year. Worldbank. (https://www.worldbank.org/en/programs/entrepreneurship).
 - Dataset of Economic freedom index. Heritage foundation. (https://www.heritage.org/index/explore?view=by-region-country-year).
@@ -13,7 +16,9 @@ The main idea of this exercise is to analyse a dataset that contains the number 
 - Dataset of Corporate tax. OECD. (https://stats.oecd.org/Index.aspx?DataSetCode=CTS_CIT#).
 - Dataset of Global innovation index. Worldbank. (https://tcdata360.worldbank.org/indicators/3aa2eb70?country=BRA&indicator=40712&viz=line_chart&years=2013,2020).
 - Dataset of median age of the population. Our world in data (obtained from UN). (https://ourworldindata.org/grapher/median-age).
-##### 3. Datasets preparation.
+
+
+#### 3. Datasets preparation.
 
 The files with the raw files and the code used for preparation are in the folder 'Datasets preparation'.
 
@@ -29,7 +34,8 @@ We find the largest amount of nan values in the following columns of the Economi
 - Fiscal Health (and therefore the category to which this metric belongs, Government Size). Government size category is added later in the file 'main' (we dind't have this column in the data from the source). 
 
 All of these tables are transferred to a MySQL Workbench schema (named nbc).
-##### 4. Main file.
+
+#### 4. Main file.
 
 We created a dataframe that would serve as a basis for the analysis. We start with:
 - Dataframe of new LLCs created per country per year.
@@ -57,7 +63,8 @@ Throughout the process, we added the information that we think could potentially
 - Global innovation index. Global innovation index score.
 - Median age. Median age of the population in the country for each year.
 
-##### 5. Analysing.
+
+#### 5. Analysing.
 
 The dataframe 'main' serves as a basis for the analysis.
 
@@ -72,3 +79,8 @@ The dataframe 'main' serves as a basis for the analysis.
 - Combined score of the two metrics (average wieghted score of the two metrics). Both metrics are equally weighted.
 
 There are other files used for analysis and obtaining insights.
+
+
+##### 6. Insights.
+
+The main insights are summarized in the presentation file (pr_midpr_v1).
