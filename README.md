@@ -33,9 +33,11 @@ We find the largest amount of nan values in the following columns of the Economi
 - Judicial Effectiveness (and therefore the category to which this metric belongs, Rule of Law). Rule of Law category is added later in the file 'main' (we dind't have this column in the data from the source).
 - Fiscal Health (and therefore the category to which this metric belongs, Government Size). Government size category is added later in the file 'main' (we dind't have this column in the data from the source). 
 
-All of these tables are transferred to a MySQL Workbench schema (named nbc).
+All of these tables are transferred to a MySQL Workbench schema (named nbc):
 
 ![nbc_schema](https://github.com/92CMDiego/mid-project-analysing-companies-creation/blob/main/images/nbc_schema.jpg)
+
+Example of the table created for the dataset containing the number of new LLCs created per country per year:
 
 ![example_newllc_table](https://github.com/92CMDiego/mid-project-analysing-companies-creation/blob/main/images/example_newllc_table.jpg)
 
