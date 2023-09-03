@@ -75,7 +75,7 @@ Throughout the process, we added the information that we think could potentially
 
 The dataframe 'main' serves as a basis for the analysis.
 
-'Analysis_correlation_and_overall_check' file. Our null hypothesis is that the correlation between the new business density rate and the economic freedom index overall score is smaller tha 0.5. For this step, we do not need to deal with the nan values, as .corr() function is not affected by this.
+'Analysing_correlation_and_overall_check' file. Our null hypothesis is that the correlation between the new business density rate and the economic freedom index overall score is smaller tha 0.5. For this step, we do not need to deal with the nan values, as .corr() function is not affected by this.
 - We find a correlation larger than 0.6.
 
 'Creating_combined_score'. For the analysis, we decided to create a combined score of two metrics: new business density rate and economic freedom index overall score. We create a new dataframe that contains the following information:
