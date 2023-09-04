@@ -27,7 +27,7 @@ The process was done separately for each dataset, as the original files come fro
 - A column with the iso code of the country (alpha3) is introduced. We used pycountry library for this.
 - An "id" column is introduced to uniquely identify each row. It is formed by the combination of the country code and the year of the register (for example: "ESP-2006").
 
-As the datasets contain historical information and cover large lists of countries, all of the files contained missing data (represented with nan values). The majority of these values are not replaced nor this rows eliminated (we keep most of the information of the source). We do remove some other 'nan' values during the analysis.
+As the datasets contain historical information and cover large lists of countries, all of the files contained missing data (represented with nan values). The majority of these values are not replaced nor this rows eliminated (we want to keep the most of the information from the sources, as it can help us during EDA or analysis). We do remove some other 'nan' values during the analysis, whenever we see it's necessary or useful to do so.
 
 We find the largest amount of nan values in the following columns of the Economic freedom index dataset (this is due to the fact that these metrics were not computed until 2017):
 - Judicial Effectiveness (and therefore the category to which this metric belongs, Rule of Law). Rule of Law category is added later in the file 'main' (we dind't have this column in the data from the source).
