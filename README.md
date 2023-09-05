@@ -77,7 +77,7 @@ The dataframe 'main' serves as a basis for the analysis.
 
 'Analysing_correlations_hypothesis_and_overall_check' file. We first check the correlation between the economic freedom index and the new business density rate (we obtain a correlation above 0.6). We also used the two sample independent t-test (we assume both groups are independent):
 - We divide the data into two groups (lower level of economic freedom scores, upper level of economic freedom scores).
-- We apply the t-test for the mean of the new business density rate of both groups.
+- We apply the t-test for the mean of the new business density rate of the two groups.
 - Our null hypothesis is that the mean for both groups is equal.
 - For an alpha value of 0.05, we can reject the null hypothesis.
 
