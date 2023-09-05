@@ -75,15 +75,20 @@ Throughout the process, we added the information that we think could potentially
 
 The dataframe 'main' serves as a basis for the analysis.
 
-'Analysing_correlations_and_overall_check' file. Our null hypothesis is that the correlation between the new business density rate and the economic freedom index overall score is smaller tha 0.5. For this step, we do not need to deal with the nan values, as .corr() function is not affected by this.
-- We find a correlation larger than 0.6.
+'Analysing_correlations_hypothesis_and_overall_check' file. We first check the correlation between the economic freedom index and the new business density rate (we obtain a correlation above 0.6). We also used the two sample independent t-test (we assume both groups are independent):
+- We divide the data into two groups (lower level of economic freedom scores, upper level of economic freedom scores).
+- We apply the t-test for the mean of the new business density rate of both groups.
+- Our null hypothesis is that the mean for both groups is equal.
+- For an alpha value of 0.05, we can reject the null hypothesis.
 
-'Creating_combined_score'. For the analysis, we decided to create a combined score of two metrics: new business density rate and economic freedom index overall score. We create a new dataframe that contains the following information:
+'Creating_combined_score' file. For the analysis, we decided to create a combined score of two metrics: new business density rate and economic freedom index overall score. We create a new dataframe that contains the following information:
 - Average new business density rate per country.
 - Average economic freedom index per country.
 - Average new business density rate per country (scaled using MinMaxScaler).
 - Average economic freedom index per country (scaled using MinMaxScaler).
 - Combined score of the two metrics (average wieghted score of the two metrics). Both metrics are equally weighted.
+
+We don't have the same amount of data available for every year. So we checked that the trends presented in the insights are similar for the whole dataset than the ones we get if we only use the years for which we have all of the information.
 
 There are other files used for analysis and obtaining insights.
 
